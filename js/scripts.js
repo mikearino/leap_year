@@ -1,7 +1,14 @@
 var leapYear = function(year) {
-  return false;
-};//Writing simple back end function to see if program can return false
-
+  if (year % 100 === 0) {
+    return false;
+    //if the year is divisble by 100 then it is not a leap year which is spit back to the user
+  } else if (year % 4 === 0) {
+    return true;
+    //if the year is divisible by 4 then it is a leap year and returns true to the user
+  } else {
+    return false;
+  }
+};
 
 
 $(document).ready(function() {
